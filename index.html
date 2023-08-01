@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center main-color my-5 header">To Do List</h1>
+        <div class="row g-4">
+            <div class="col-sm-9">
+                <div class="task-input">
+                    <input type="text" class="w-100 form-control" placeholder="Task" id="task-inpt">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="task-submit">
+                    <div class="btn btn-outline-warning px-5 py-2 add" id="add"><span class="plus me-2">+</span> Add
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- !***********Tasks**************! -->
+        <div class="row my-4 g-5">
+            <div class="col-lg-6 col-md-12">
+                <div class="containn border border-2 border-warning py-4">
+                    <h2 class="text-center main-color task-header mb-4 h2" id="tasks">tasks</h2>
+                    <div id="inertast">
+
+
+
+                    </div>
+                    <div class="btn btn-danger w-100" id="deleteAllTasks">Delete All</div>
+
+                </div>
+            </div>
+            <!-- *************Complete**********************! !-->
+            <div class="col-lg-6 col-md-12">
+                <div class="border border-2 border-warning py-4">
+                    <h2 class="main-color text-center Complete mb-4" >Complete</h2>
+                    <div id="completeAreaAll">
+
+
+                    </div>
+                <div class="btn btn-danger w-100 d-none mt-2" id="deleteAllComplete"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- warning delete tasks -->
+    <div class="overlay-container d-none position-fixed top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center " id="overlay-container">
+        <div class="overlay bg-white">
+            <div class="circles d-flex mt-3">
+                <div class="circle bg-danger mx-2 rounded-circle mb-4"></div>
+                <div class="circle bg-success mx-2 rounded-circle mb-4"></div>
+                <div class="circle bg-warning mx-2 rounded-circle mb-4"></div>
+            </div>
+            <h5>Are you sure you want to <span class="text-red">clear all the tasks</span>  without finishing them?</h5>
+                <div class="buttons mt-4 d-flex justify-content-center">
+                    <div class="btn btn-primary mx-2" id="cancel-warnnig" >Cancel</div>
+                    <div class="btn btn-danger  mx-2" id="acceptWarnning">Delete All</div>
+                </div>
+        </div>
+    </div>
+    <!-- warning add task -->
+
+    <div class="overlay-add position-fixed d-none top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center " id="overlay-add">
+        <div class="overlay-message bg-white d-flex justify-content-center flex-column">
+            <h5 class="my-3">You have to add task</h5>
+            <div class="btn btn-primary px-5 " id="accept">Ok</div>
+        </div>
+    </div>
+    <!-- warning delete Compete -->
+
+    <div class="overlay-complete position-fixed d-none top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center "id="overlay-complete">
+        <div class="overlayComlete bg-white d-flex justify-content-center flex-column">
+            <div class="circles d-flex mt-1 ">
+                <div class="circle bg-danger mx-2 rounded-circle mb-4"></div>
+                <div class="circle bg-success mx-2 rounded-circle mb-4"></div>
+                <div class="circle bg-warning mx-2 rounded-circle mb-4"></div>
+            </div>
+           <h5 class="mb-3"> Are you sure you want to clear all your <span class="text-red mx-1"> achievements</span>?</h5>
+           <div class="btn-groub d-flex justify-content-center">
+
+               <div class="btn btn-primary mx-2" id="iamNotSure">No i want</div>
+               <div class="btn btn-danger mx-2" id="iamSure">Yes i'am Sure</div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

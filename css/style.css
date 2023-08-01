@@ -1,0 +1,149 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+*::selection{
+    /* color: rgb(2, 2, 62); */
+    color: #fff;
+    background-color: rgb(165, 142, 10);
+}
+body{
+    background-color: rgb(2, 2, 62);
+}
+
+.main-color{
+    color: rgb(165, 142, 10);
+}
+.margin-0{
+    margin: 0;
+}
+.text-red{
+    color: red;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>>>>>>(Input)<<<<<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    .header{
+        position: relative;
+        width: fit-content;
+        margin: auto;
+    }
+    .header::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 35%;
+        background-color: rgb(124, 9, 70);
+        z-index: -1;
+        transition: 0.5s;
+    }
+    .header:hover::before{
+
+      height: 60%;
+    }
+    
+.form-control{
+    outline:  rgb(165, 142, 10) 4px solid;
+}
+.form-control:focus{
+        box-shadow: none;
+        outline:  rgb(204, 175, 9) 4px solid;
+        outline-offset: 3px;
+}
+
+.plus{
+font-size: 20px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>>>>>(Task)<<<<<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.task-header{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.task-header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(165, 142, 10) ;
+    height: 3px;
+}
+
+#success{
+    color: #fff;
+    border: none;
+    
+ background-color: rgb(7, 102, 7);
+}
+#success:hover{
+    color: #fff;
+   background-color: #0e5703;
+
+}
+#Update{
+    color: #fff;
+    background-color:rgb(165, 142, 10) ;
+    border: none;
+}
+#Update:hover{
+    color: #fff;
+    background-color:rgb(127, 109, 6) ;
+    border: none;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>>>>>>>>>>>(COMPLETE)<<<<<<<<<<<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.Complete{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.Complete::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color:rgb(165, 142, 10) ;
+}
+.complete-icon{
+    font-size: 20px !important;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>>>>>>>>>>>(warning)<<<<<<<<<<<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.overlay-container{
+    background-color: rgba(255,255,255,0.3) !important;
+}
+.overlay{
+    padding: 20px 15px;
+    max-width: 500px;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+}
+h5{
+    line-height: 32px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>>>>>>>>>>>(warning)<<<<<<<<<<<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.overlay-add{
+    background-color: rgba(255,255,255,0.3) !important;
+
+}
+.overlay-message{
+    width: 400px;
+    height: 100px;
+    padding: 70px 20px;
+    text-align: center;
+}
+#ok{
+    width: fit-content;
+    margin: auto;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>>>>>>>>>>>(warning)<<<<<<<<<<<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.overlay-complete{
+    background-color: rgba(255,255,255,0.3) !important;
+
+}
+.overlayComlete{
+    padding: 30px 30px;
+}
